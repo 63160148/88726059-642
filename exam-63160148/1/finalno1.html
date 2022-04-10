@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplay</title>
+</head>
+<body>
+    
+
+
+    <script>
+
+        function multiply(num,round){
+            var sum="";
+            for(i=1;i<=round;i++){
+           sum+=num+"X"+i+"="+(num*i)+"<br>"; 
+        }
+        return sum;
+        }
+
+
+
+      var a,b;
+      var confirme=confirm("ต้องการคำนวนหรือไม่");
+      if(confirme==true){
+        a=prompt("ระบุแม่สูตรคูณ");
+        b=prompt("ใส่จำนวนรอบ");
+       
+       
+        document.write(multiply(a,b));
+      }else{
+alert("ยกเลิกละ");
+      }
+    </script>
+</body>
+</html>
